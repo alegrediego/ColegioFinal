@@ -1,6 +1,8 @@
 package com.solvd;
 
 public class Whiteboard extends Furniture implements Broken{
+    //private modifier
+    //setters and getters
     String whiteboard1,whiteboard2,whiteboard3,whiteboard4;
 
     public Whiteboard(){

@@ -44,7 +44,7 @@ final public class Teachers<T> extends Person {
 
 
     @Override
-    public Object ill() {
+    public String ill() {
         return "Teacher "+FirstName+" "+LastName+" is ill";
     }
 

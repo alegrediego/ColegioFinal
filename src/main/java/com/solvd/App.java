@@ -5,12 +5,11 @@ import org.apache.log4j.Logger;
 
 import java.io.*;
 import java.util.*;
-import java.util.function.BiConsumer;
 
 
 public class App {
 
-    private static Logger Logjava = Logger.getLogger(App.class);
+    private static Logger log = Logger.getLogger(App.class);
 
     public static void main(String[] args) throws IOException {
 
@@ -57,7 +56,7 @@ public class App {
         students.add(ab);
         students.add(ac);
 
-        students.forEach(students1 -> Logjava.info(students1.getName()));
+        students.forEach(students1 -> log.info(students1.getName()));
 
 
         List<Teachers> teachers = new LinkedList<>();
@@ -65,7 +64,7 @@ public class App {
         teachers.add(bb);
         teachers.add(bc);
 
-        teachers.forEach(teachers1 -> Logjava.info(teachers1.getName()));
+        teachers.forEach(teachers1 -> log.info(teachers1.getName()));
 
         List<Assistant> assistants = new LinkedList<>();
         assistants.add(ca);
@@ -73,7 +72,7 @@ public class App {
         assistants.add(cc);
 
 
-        assistants.forEach(assistants1 -> Logjava.info(assistants1.getName()));
+        assistants.forEach(assistants1 -> log.info(assistants1.getName()));
 
 
 
@@ -82,21 +81,21 @@ public class App {
         Present.add(bc);
 
 
-        Present.forEach(Present1 -> Logjava.info(Present1.yes()));
+        Present.forEach(Present1 -> log.info(Present1.yes()));
 
 
         List<Person> NotPresent = new ArrayList<>();
         NotPresent.add(bb);
         NotPresent.add(ca);
 
-        NotPresent.forEach(NotPresent1 -> Logjava.info(NotPresent1.no()));
+        NotPresent.forEach(NotPresent1 -> log.info(NotPresent1.no()));
 
         //ArrayList
         List<Furniture> Brk = new ArrayList<>();
         Brk.add(w1);
         Brk.add(d1);
 
-        Brk.forEach(Brk1 -> Logjava.info(Brk1.broken()));
+        Brk.forEach(Brk1 -> log.info(Brk1.broken()));
 
         //Maps
         Map<Integer, Students> NS = new HashMap<>();
@@ -104,7 +103,7 @@ public class App {
         NS.put(0, ae);
 
 
-        NS.forEach((integer, students12) -> Logjava.warn(NS.get(0).getName()));
+        NS.forEach((integer, students12) -> log.warn(NS.get(0).getName()));
 
         File file = new File("nothing.txt");
         BufferedReader br = null;
@@ -118,7 +117,7 @@ public class App {
                 System.out.println(line);
             }
         } catch (FileNotFoundException e) {
-            Logjava.error("File not found: " + file.toString());
+            log.error("File not found: " + file.toString());
 
         }
 
