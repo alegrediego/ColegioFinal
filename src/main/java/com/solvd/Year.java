@@ -1,7 +1,8 @@
 package com.solvd;
 
 public enum Year {
-    FIRST,
+    //parameters(
+    FIRST(),
     SECOND,
     THIRD,
     FOURTH,

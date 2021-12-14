@@ -15,7 +15,7 @@ final public class Assistant extends Person{
         this.LastName = LastName;
         this.DNI = DNI;
         Logjava.debug("Assistant "+FirstName+" "+LastName+" "+DNI);
-    };
+    }
 
         public Assistant (String FirstName, String LastName, String DNI, Enum Level){
         this.FirstName = FirstName;
@@ -37,7 +37,7 @@ final public class Assistant extends Person{
 
 
     @Override
-    public Object ill() {
+    public String ill() {
         return "Assistant "+FirstName+" "+LastName+" is ill";
     }
 

@@ -3,7 +3,7 @@ package com.solvd;
 import org.apache.log4j.Logger;
 
 
-    public class Students extends Person{
+public class Students extends Person {
     private String Name;
     private String LastName;
     private String DNI;
@@ -12,7 +12,7 @@ import org.apache.log4j.Logger;
 
     private static Logger Logjava = Logger.getLogger(Students.class);
 
-    public Students(String Name, String LastName, String DNI, Enum Year, Enum subjects){
+    public Students(String Name, String LastName, String DNI, Enum Year, Enum subjects) {
 
 
         this.Name = Name;
@@ -20,14 +20,13 @@ import org.apache.log4j.Logger;
         this.DNI = DNI;
         this.Year = Year;
         this.subjects = subjects;
-        Logjava.debug("Student "+Name+" "+LastName+" "+DNI+" "+Year+" "+subjects);
-    };
-
-    public Object getName(){
-
-    return Name+" "+LastName;
+        Logjava.debug("Student " + Name + " " + LastName + " " + DNI + " " + Year + " " + subjects);
     }
 
+    public Object getName() {
+
+        return Name + " " + LastName;
+    }
 
 
     @Override
@@ -42,20 +41,20 @@ import org.apache.log4j.Logger;
     }
 
 
-
-    public Object ill(){
-        return "Student "+Name+" "+LastName+" is ill";
+    ///Should not be object(it should be String)
+    public String ill() {
+        return "Student " + Name + " " + LastName + " is ill";
     }
 
 
-        @Override
-        public Number getValue() {
-            return null;
-        }
-
-        @Override
-        public void setValue(Number number) {
-
-        }
+    @Override
+    public Number getValue() {
+        return null;
     }
+
+    @Override
+    public void setValue(Number number) {
+
+    }
+}
 

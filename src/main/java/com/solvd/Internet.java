@@ -2,6 +2,8 @@ package com.solvd;
 
 public class Internet extends ServiceExpenses implements Payments {
 
+    //Too empty
+
     public Internet(){
 
     }

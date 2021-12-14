@@ -1,7 +1,7 @@
 package com.solvd;
 
 public class ServiceExpenses extends Infrastructure{
-
+    //Too empty
     public ServiceExpenses(){
 
     }
