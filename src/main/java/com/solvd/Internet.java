@@ -1,18 +1,25 @@
 package com.solvd;
 
+import com.solvd.Interface.Payments;
+
 public class Internet extends ServiceExpenses implements Payments {
-
-    public Internet(){
+    public String month;{
 
     }
 
+    public Internet(String month){
+    this.month = month;
+
+    }
+
+
     @Override
-    public Object Payed() {
-        return "Internet Payed";
+    public Object P1() {
+        return month +" Payed";
     }
 
     @Override
-    public Object NotPayed() {
-        return "Internet not Payed";
+    public Object N1() {
+        return month +" not Payed";
     }
 }
